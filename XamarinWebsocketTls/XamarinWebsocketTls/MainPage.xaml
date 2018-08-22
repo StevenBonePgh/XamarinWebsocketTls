@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinWebsocketTls"
+             x:Class="XamarinWebsocketTls.MainPage">
+    <StackLayout>
+        <StackLayout.BindingContext>
+            <local:MainPageViewModel />
+        </StackLayout.BindingContext>
+        <Grid VerticalOptions="Start">
+            <Grid.BindingContext>
+                <local:MainPageViewModel />
+            </Grid.BindingContext>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Column="0" Grid.Row="0" Text="HostName" />
+            <Entry Grid.Column="1" Grid.Row="0" Placeholder="HostName"  Text="{Binding HostName, Mode=TwoWay}"/>
+
+            <Label Grid.Column="0" Grid.Row="1" Text="Use TLS" />
+            <Switch Grid.Column="1" Grid.Row="1"  IsToggled="{Binding UseTls, Mode=TwoWay}" />
+
+            <Label Grid.Column="0" Grid.Row="2" Text="Add Cert To Store" />
+            <Switch Grid.Column="1" Grid.Row="2"  IsToggled="{Binding AddCertToStore, Mode=TwoWay}" />
+
+            <Label Grid.Column="0" Grid.Row="3" Text="Validation Callback" />
+            <Switch Grid.Column="1" Grid.Row="3"  IsToggled="{Binding UseServerValidationCallback, Mode=TwoWay}" />
+
+            <Button Grid.Column="0" Grid.Row="4"  Command="{Binding ConnectCommand}" Text="Connect" HorizontalOptions="StartAndExpand" />
+            <Button Grid.Column="1" Grid.Row="4"  Command="{Binding ClearCommand}" Text="Clear" HorizontalOptions="EndAndExpand" />
+
+        </Grid>
+        <Entry Placeholder="Type Message Here"  Text="{Binding CurrentMessage, Mode=TwoWay}"/>
+        <Button  Command="{Binding SendMessageCommand}" Text="Send Message" />
+        <Label Text="Received Messages" />
+        <Label  Text="{Binding Messages, Mode=TwoWay}" HorizontalOptions="StartAndExpand" VerticalOptions="FillAndExpand" />
+
+    </StackLayout>
+
+</ContentPage>

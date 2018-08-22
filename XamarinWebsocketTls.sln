@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FleckServer", "FleckServer\FleckServer.csproj", "{A9772C72-198B-4F4C-89B2-D4308B3BC17D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinWebsocketTls.Android", "XamarinWebsocketTls\XamarinWebsocketTls.Android\XamarinWebsocketTls.Android.csproj", "{B2A9526E-8601-4BDA-BA83-A78CFF96A9DC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinWebsocketTls", "XamarinWebsocketTls\XamarinWebsocketTls\XamarinWebsocketTls.csproj", "{F30FBA40-5D8D-4B35-9B22-E83D8AF39033}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketClient", "WebSocketClient\WebSocketClient.csproj", "{54C75650-7342-4F74-8E31-9BC7BAB8E109}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A9772C72-198B-4F4C-89B2-D4308B3BC17D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9772C72-198B-4F4C-89B2-D4308B3BC17D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9772C72-198B-4F4C-89B2-D4308B3BC17D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9772C72-198B-4F4C-89B2-D4308B3BC17D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A9526E-8601-4BDA-BA83-A78CFF96A9DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A9526E-8601-4BDA-BA83-A78CFF96A9DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A9526E-8601-4BDA-BA83-A78CFF96A9DC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B2A9526E-8601-4BDA-BA83-A78CFF96A9DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A9526E-8601-4BDA-BA83-A78CFF96A9DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2A9526E-8601-4BDA-BA83-A78CFF96A9DC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F30FBA40-5D8D-4B35-9B22-E83D8AF39033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F30FBA40-5D8D-4B35-9B22-E83D8AF39033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F30FBA40-5D8D-4B35-9B22-E83D8AF39033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F30FBA40-5D8D-4B35-9B22-E83D8AF39033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54C75650-7342-4F74-8E31-9BC7BAB8E109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C75650-7342-4F74-8E31-9BC7BAB8E109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C75650-7342-4F74-8E31-9BC7BAB8E109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54C75650-7342-4F74-8E31-9BC7BAB8E109}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3094737-5470-42EC-94EE-33913AEFECAE}
+	EndGlobalSection
+EndGlobal
