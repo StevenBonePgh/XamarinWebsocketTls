@@ -1,7 +1,7 @@
 # XamarinWebsocketTls
 Demonstrate TLS 1.2 issue with custom Certification Authority Certificates in Xamarin Android.
 
-This is the sample code for [Stack Overflow Question Xamarin Android: Native TLS, ClientWebSocket, with Custom Certificate Authority Certificate Validation Fails](https://stackoverflow.com/questions/51967177/xamarin-android-native-tls-clientwebsocket-with-custom-certificate-authority)
+This is the sample code for [Stack Overflow Question Xamarin Android: Native TLS, ClientWebSocket, with Custom Certificate Authority Certificate Validation Fails](https://stackoverflow.com/questions/51967177/xamarin-android-native-tls-clientwebsocket-with-custom-certificate-authority) and [xamarin-android GitHub issue 2176](https://github.com/xamarin/xamarin-android/issues/2176)
 
 Included is a sample_ca Certification Authority in all common formats. The code in the FleckServer project will use this CA to generate a client certificate with Subject Alternative Names (SAN) that are bound to your IP addresses and hostname, then host a Fleck WebSocket server using this client certificate under TLS 1.2.
 
